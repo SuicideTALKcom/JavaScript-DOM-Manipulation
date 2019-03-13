@@ -27,21 +27,31 @@
     </div>
     <div class="container">
       <div class="row margin-top-50">
+        <p>FILTER &nbsp;or &nbsp;REFRESH &nbsp;below</p>
         <div class="col-md-2">
           <aside class="filters">
             <div class="panel panel-default">
-              <div class="panel-heading">Filter Search</div>
+              <div class="panel-heading">FILTERS</div>
               <div class="panel-body">
                 <form>
                   <div class="form-group">
                     <ul class="list-group" id="filters">
                       <li class="filter list-group-item">
-                        <label for="date">Enter a Date</label>
-                        <input class="form-control" id="datetime" type="text" placeholder="1/11/2011">
+                        <label for="date">ENTER &nbsp;DATE</label>
+                        <input class="form-control" id="datetime" type="text" placeholder="1/11/2010">
+                      </li>
+                      <li class="filter list-group-item">
+                        <label for="date">ENTER &nbsp;CITY</label>
+                        <input class="form-control" id="city" type="text" placeholder="san diego">
+                      </li>
+                      <li class="filter list-group-item">
+                        <label for="date">ENTER &nbsp;STATE</label>
+                        <input class="form-control" id="state" type="text" placeholder="ca">
                       </li>
                     </ul>
                   </div>
-                  <button id="filter-btn" type="submit" class="btn btn-default">Filter Table</button>
+                  <button id="filter-btn" type="submit" class="btn btn-default">FILTER</button>
+                  <button id="clearfields-btn" type="submit" class="btn btn-default">REFRESH</button>
                 </form>
               </div>
             </div>
@@ -52,13 +62,13 @@
             <table id="ufo-table" class="table table-striped">
               <thead>
                 <tr>
-                  <th class="table-head">Date</th>
-                  <th class="table-head">City</th>
-                  <th class="table-head">State</th>
-                  <th class="table-head">Country</th>
-                  <th class="table-head">Shape</th>
-                  <th class="table-head">Duration</th>
-                  <th class="table-head">Comments</th>
+                  <th class="table-head">DATE</th>
+                  <th class="table-head">CITY</th>
+                  <th class="table-head">STATE</th>
+                  <th class="table-head">COUNTRY</th>
+                  <th class="table-head">SHAPE</th>
+                  <th class="table-head">DURATION</th>
+                  <th class="table-head">COMMENTS</th>
                 </tr>
               </thead>
               <tbody></tbody>
@@ -67,8 +77,8 @@
         </div>
       </div>
     </div>
-    <footer class="footer">
-      <span class="bottom">UFO Sightings</span>
+    <footer class="footer" style="text-align: center;">
+      <span class="bottom">DFN World</span>
     </footer>
   </div>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.11.0/d3.js"></script>
